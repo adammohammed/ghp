@@ -12,12 +12,15 @@
 
 
 ;;; Code:
+(defun something--xdg-open (url)
+  "Opens default browser to URL."
+  (browse-url-xdg-open url))
 
 ;;;###autoload
 (defun adam-something-loaded ()
   "This function does something."
   (interactive)
-  (message "doing something"))
+  (something--xdg-open "https://github.com/packethost/api"))
 
 
 (provide 'something)
