@@ -13,9 +13,10 @@
 
 ;;; Code:
 
-
+;;;###autoload
 (defun adam-something-loaded ()
   "This function does something."
+  (interactive)
   (message "doing something"))
 
 
